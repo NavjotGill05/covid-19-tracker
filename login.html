@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>SignIn</title>
+		<meta name="google-signin-client_id" content="1029857786281-um7qom9rahqhu0712pcieu8k9itsrl30.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<link rel="stylesheet" href="styles/login.css" type="text/css">
+	</head>
+	<body>
+		<h1>Welcome to our COVID-19 website</h1>
+		<p id="p1">Here you will get whole information realted to the disease Coronavirus (COVID-19).</p>
+		<p id="p2">Please login with your Google account to get updated information.</p>
+		
+		<form method="POST" action="">
+			<h2> SignIn with Google Account</h2>
+			<div class="g-signin2" data-onsuccess="onSignIn" id="login_button"></div>
+		</form>
+		<!-- reference of google signin https://developers.google.com/identity/sign-in/web/sign-in -->
+		<script>
+		
+			function onSignIn(googleUser) {
+  				var profile = googleUser.getBasicProfile();
+				//redirect to main.php file
+				window.location = 'main.php';
+			}
+
+		</script>
+	</body>
+</html>	

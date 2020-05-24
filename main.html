@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- the next 2 links are for google signin -->
+		<meta name="google-signin-client_id" content="1029857786281-um7qom9rahqhu0712pcieu8k9itsrl30.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+		<script src="javascript/index.js"></script>	
+		<link href="https://fonts.googleapis.com/css2?family=Acme&family=Candal&family=Titan+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/style.css" type="text/css">
+		<title>COVID-19</title>
+	</head>
+<body>
+	<!-- Reference for navigation is taken from https://getbootstrap.com/docs/4.0/components/navbar/ on 13-04-2020 at 7:00pm  -->
+	<nav class="navbar navbar-expand-lg navbar-light p-4 navigation_style">
+		<a class="navbar-brand pl-4 nav_head" href="#">COVID-19</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto pr-4">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#symptoms">Symptoms</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#prevention">Prevention</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#updates">Updates</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<a href="#" onclick="signOut();" id="logout_button">Sign out</a>
+	
+	<!-- *********** container containing the slogan and image of coronavirus ********-->
+	<div class="top_container">
+		<div class="slogan_div">
+			<p class="slogan">Stay Home and Stay Safe</p>
+			<p class="slogan">Let's fight together against Corona Virus</p>
+		</div>
+		<div class="img_div">
+			<img src="images/coronavirus.jpg" alt="Coronavirus" class="imge"/>
+		</div>
+	</div>
+	
+	<!-- *********** information about coronavirus ********-->
+	<div class="about_container" id="about">
+		<h2 class="about_heading">About COVID-19</h2>
+		<div class="top_container">
+			<div class="coronaImg_div">
+				<img src="images/covid.jpg" alt="Coronavirus" class="imge2"/>
+			</div>
+			<div class="aboutCorona_div">
+				<!-- reference of content taken from https://www.who.int/health-topics/coronavirus#tab=tab_1 on 13-04-2020 at 9:00pm-->
+				<h3 class="question">What is Corona Virus(COVID-19)?</h3>
+				<p class="details">Coronavirus disease(COVID-19) is an infectious disease caused by newly discovered virus known as coronavirus. 
+				Most of the people infected with coronavirus experience mild to moderate respiratory illness and recover without requiring any special treatment. 
+				People with underlying medical problems like diabetes, cancer, cardiovascular disease, chronic respiratory disease are more likelt to get infected with this disease.
+				</p>
+				<p class="details">At the present moment, there is no specific treatment or vaccines to get rid of COVID-19. 
+				But, several clinical trials are going on to evaluate the potential treatments. 
+				When the clinical findings will become available then WHO will provide us the updated information about that.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- *********** Symptoms section ********-->
+	<!-- reference of images https://www.google.com/search?q=images+for+symptoms+of+covid-19&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiN4NmQk-noAhUVHc0KHV-WDqUQ_AUoAXoECAsQAw&biw=1366&bih=654  -->
+	<div class="about_container" id="symptoms">
+		<h2 class="about_heading">Symptoms of COVID-19</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/cough.png" alt="cough" class="prevention_img">
+						<figcaption>Cough</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/runnyNose.png" alt="Runny Nose" class="prevention_img">
+						<figcaption>Runny Nose</figcaption>
+					</figure>
+			    </div>
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/throat.png" alt="throat" class="prevention_img">
+						<figcaption>Sore throat</figcaption>
+					</figure>
+			    </div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/lungs.png" alt="lungs" class="prevention_img">
+						<figcaption>Difficulty in breathing</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/fever.png" alt="fever" class="prevention_img">
+						<figcaption>Fever</figcaption>
+					</figure>
+			    </div>
+				<div class="col-lg-4 col-md-4 col-12">
+					<figure>
+						<img src="images/shortenBreath.png" alt="Shorten Breath" class="prevention_img">
+						<figcaption>Shortening of breath</figcaption>
+					</figure>
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- *********** Prevention section ********-->
+	<!--refernce of images https://www.google.com/search?q=images+for+prevention+covid-19&client=firefox-b-d&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiQoYvvhenoAhWGB80KHUSvBCQQ_AUoAXoECAsQAw&biw=1365&bih=614 -->
+	<div class="about_container" id="prevention">
+		<h2 class="about_heading">Prevention against COVID-19</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-12">
+					<figure>
+						<img src="images/cough.jpg" alt="cough" class="prevention_img">
+						<figcaption>Sneeze or cough in a tissue and throw it in a bin</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-3 col-md-3 col-12">
+					<figure>
+						<img src="images/touch.jpg" alt="Person touching his nose" class="prevention_img">
+						<figcaption>Avoid touching your nose, mouth and eyes</figcaption>
+					</figure>
+			    </div>
+				<div class="col-lg-3 col-md-3 col-12">
+					<figure>
+						<img src="images/home.jpg" alt="HOME" class="prevention_img">
+						<figcaption>Stay home when you are not feeling well</figcaption>
+					</figure>
+			    </div>
+				<div class="col-lg-3 col-md-3 col-12">
+					<figure>
+						<img src="images/handwash.jpg" alt="handwash" class="prevention_img">
+						<figcaption>Wash yours hands properly  atleast for 20 seconds</figcaption>
+					</figure>
+			    </div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- *********** Updates *****************-->
+	<div class="about_container" id="updates">
+		<h2 class="about_heading">Updates regarding COVID-19</h2>
+		<div class="table-responsive">
+			<table class="table table-bordered" id="updateTable">
+			<tr>
+				<th>Country</th>
+				<th>New Confirmed</th>
+				<th>New Deaths</th>
+				<th>New Recovered</th>
+				<th>Total Confirmed</th>
+				<th>Total Deaths</th>
+				<th>Total Recovered</th>
+			</tr>
+			</table>
+		</div>
+	</div>
+	
+	<!-- *********** Footer ********-->
+	<footer id="footer">
+		<div class="footer">copyright by Navjot Gill</div>
+	</footer>
+	
+	<!-- refernce of google signout https://developers.google.com/identity/sign-in/web/sign-in -->
+	<script>
+			function signOut() {
+				gapi.load('auth2',function(){
+					gapi.auth2.init().then(function(){
+						var auth2 = gapi.auth2.getAuthInstance();
+						auth2.signOut().then(function () {
+							auth2.disconnect();
+							//redirect to login.html page
+							window.location='login.html';
+						});
+					});
+				});
+  			}
+	</script>
+</body>
+</html>	
+
+
+
+<!--refernec of bootstrap:  https://www.w3schools.com/bootstrap4/ -->
+
+

@@ -1,0 +1,146 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family: 'Candal', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+.nav_head{
+	font-size:30px;
+}
+.navigation_style{
+	background-color:#d9d9d9;
+	font-size:20px;
+}
+.navigation_style a{
+	color:white;
+}
+
+/*--------- Top container -----------*/
+.top_container{
+	display: flex;
+    flex-wrap: wrap;
+}
+.slogan_div{
+	flex:70%;
+	padding: 5% 2% 2% 8% ;
+}
+.slogan{
+	margin-bottom:0;
+	font-size:30px;
+	text-align:center;
+	color:#cc0000;
+}
+.img_div{
+	flex: 30%;
+    padding: 2%;
+}
+.imge{
+	display:block;
+	width:200px;
+    height:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* ----------About---------*/
+.about_container{
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:30px;
+}
+#about{
+	background-color:whitesmoke;
+}
+.about_heading{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:20px;
+	font-weight:bold;
+	font-size:35px;
+}
+.question{
+	text-align:center;
+	padding-left:20px;
+}
+.coronaImg_div{
+	flex: 50%;
+    padding: 3% 0 2% 2%;
+}
+.imge2{
+	display:block;
+	width:500px;
+    height:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.aboutCorona_div{
+	flex:50%;
+	padding: 2% 2% 2% 0 ;
+}
+.details{
+	padding-left:20px;
+	font-weight:normal;
+	font-size:20px;
+	font-family: 'Acme', sans-serif;
+}
+
+/* ------------Prevention section---------*/
+.container{
+	padding-top: 10px;
+}
+figure{
+	padding:30px 10px 10px 10px;
+	text-align:center;
+	font-size:20px;
+	background-color:whitesmoke;
+	border-radius:20px;
+}
+figcaption{
+	padding:1% 3% 1% 3%;
+}
+.prevention_img{
+	display:block;
+	width:150px;
+    height:150px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:20px;
+}
+
+/* ----------table --------*/
+table{
+	text-align:center;
+}
+th{
+	font-size:20px;
+	background-color:#d9d9d9;
+	color:black;
+	font-weight:normal;
+}
+
+/*-------------Footer ----------*/
+.footer{
+	padding:4%;
+	background-color:#d9d9d9;
+	margin-top:80px;
+	font-size:15px;
+	text-align:center;
+	font-weight:normal;
+	height:100px;
+}
+#logout_button{
+	background-color:whitesmoke;
+	padding:10px;
+	float:right;
+	border-radius:10px;
+	color:black;
+}
+
+
+
+
+
